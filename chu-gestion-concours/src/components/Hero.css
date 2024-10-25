@@ -1,0 +1,176 @@
+.hero {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 5rem 2rem;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    transition: background-image 1s ease-in-out;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    animation: fadeInDown 1s ease-out;
+  }
+  
+  .hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    animation: fadeInDown 1.5s ease-out;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    animation: fadeInUp 2s ease-out;
+  }
+  
+  .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary {
+    background-color: #ffc107;
+    color: #0056b3;
+  }
+  
+  .btn-secondary {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .btn:hover {
+    opacity: 0.8;
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /*section how to use plateform*/
+
+  .how-to-register {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.how-to-register .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.how-to-register h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.how-to-register p {
+    font-size: 1.125rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.steps-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.step-card {
+    width: 300px; /* Square card width */
+    height: 300px; /* Square card height */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.step-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.step-icon {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.step-description h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.step-description p {
+    font-size: 1rem;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .steps-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step-card {
+        width: 100%;
+        max-width: 300px; /* Ensure cards don’t exceed a reasonable width on smaller screens */
+        height: auto; /* Adjust height automatically to fit content */
+    }
+}

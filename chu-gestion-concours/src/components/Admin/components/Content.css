@@ -1,0 +1,13 @@
+/* Content styles */
+.content {
+  margin-left: 250px;
+  padding: 20px;
+  flex: 1;
+}
+
+/* Responsive styles for content */
+@media screen and (max-width: 992px) {
+  .content {
+      margin-left: 0;
+  }
+}

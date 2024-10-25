@@ -1,0 +1,13 @@
+/* Navbar styles */
+.top-navbar {
+    margin-bottom: 20px; /* Space below the navbar */
+}
+
+/* Navbar items */
+.nav-link {
+    color: #ffffff;
+}
+
+.nav-link:hover {
+    background-color: #20456a;
+}

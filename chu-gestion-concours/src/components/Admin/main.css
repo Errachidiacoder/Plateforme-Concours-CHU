@@ -1,0 +1,13 @@
+/* Main container for layout */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the container takes full height */
+}
+
+/* Content area styles */
+.content-area {
+    flex: 1; /* Take the remaining space */
+    padding: 20px;
+    background-color: #f8f9fa;
+}
